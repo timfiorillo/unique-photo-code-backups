@@ -1,0 +1,203 @@
+<style>
+    .pagewrap {
+        background: #ebf1f5;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .birdwrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 30px;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    .buttonlink {
+        margin: 25px 0px 10px 0px;
+    }
+
+    .buttonlink>a {
+        background: #000000;
+        color: #ffffff;
+        padding: 7px 40px;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 50px;
+    }
+
+    .buttonlink>a:hover {
+        background: #248ed5;
+    }
+
+    .texthead {
+        line-height: 2.3rem;
+    }
+
+    .texthead>h2 {
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 2.5rem;
+        letter-spacing: .07em;
+        line-height: 2.6rem;
+    }
+
+    .texthead>h2>span {
+        font-size: .45em;
+        font-weight: lighter;
+    }
+
+    .texthead>p {
+        font-size: 1.2rem;
+        margin: 0;
+        letter-spacing: .12rem;
+    }
+
+    .textbody {
+        font-size: .9rem;
+        line-height: 1.5;
+        margin: 14px 0px 40px 0px;
+    }
+
+    .gridwrap {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: grid;
+        grid-row-gap: 40px;
+
+    }
+
+    .itemwrap {
+        display: grid;
+        grid-template: 1fr
+            / 1fr 85px;
+        background: #ffffff;
+        box-shadow: 2px 5px 12px -2px rgba(0, 0, 0, 0.32);
+        -webkit-box-shadow: 2px 5px 12px -2px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 2px 5px 12px -2px rgba(0, 0, 0, 0.32);
+    }
+
+    .griditem {
+        display: grid;
+        align-items: center;
+    }
+
+    .griditem p {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin:10px 0px 0px 0px;
+}
+
+    .griditem h3
+    {
+        all:initial;
+        text-transform:uppercase;
+        font-family: source_sans_prosemibold,helvetica,arial,sans-serif;
+    }
+
+    .gridtext 
+    {
+    padding: 50px;
+    }
+
+    .arrow {
+        background: #bcbcbc;
+        color: #ffffff;
+        justify-items: center;
+        font-size: 1.6rem;
+    }
+
+    .arrow:hover
+    {
+        background: #248ed5;
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        .birdwrap {
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    @media only screen and (max-width: 650px) {
+
+        .itemwrap
+        {
+            grid-template: 1fr 60px / 1fr;
+        }
+
+
+    }
+
+</style>
+
+
+
+<div class="pagewrap">
+    <div class="birdwrap">
+        <div class="item birdtxt">
+            <div class="texthead">
+                <h2><span>Audubon's</span> <br />Philly Birding Weekend</h2>
+                <p>
+                    <strong>Event:</strong> October 7-9, 2022
+                </p>
+            </div>
+            <div class="textbody">
+                <p>
+                    Audubon Mid-Atlantic invites people from across the Philadelphia region to join us as we explore
+                    some of the city's iconic green spaces and look for birds on their fall migration. Each tour will be
+                    guided by bird experts.
+                </p>
+            </div>
+            <div class="buttonlink">
+                <a href="https://phillybirding.com/index.php/register-now/" target="_blank">Get Tickets</a>
+            </div>
+        </div>
+        <div class="item birdpic">
+            <img src="https://uniquephoto.azureedge.net/resources/uniquephoto/images/landing/birding/philly-birds.jpg"
+                alt="Philly Birding Weekend" style="width:100%; max-width:593px;" />
+        </div>
+    </div>
+    <div class="gridwrap">
+        <div class="itemwrap">
+            <div class="griditem gridtext">
+                <div>
+                    <h3>Camera and Lens Rentals</h3>
+                    <p>Need some extra gear? Our extensive rental department stocks the newest and hottest releases for
+                        you to try out. From digital cameras, lighting & studio, audio equipment, and even drones, we
+                        are fully equipped to rent out any gear you might need. <a href="/rentals">View Rentals</a></p>
+                </div>
+            </div>
+            <div class="griditem arrow" onclick="window.location.href='https://www.uniquephoto.com/rentals';">
+                &#8594
+            </div>
+        </div>
+        <div class="itemwrap">
+            <div class="griditem gridtext">
+                <div>
+                    <h3>Unique University</h3>
+                    <p>With over 2,000 sq. feet of classrooms, Unique University sets out to help anyone 'create better
+                        pictures'. Providing photography education for beginners to pros, we offer a full curriculum
+                        from basic to advanced camera classes, photo excursions & workshops, meetups, private one-on-one
+                        lessons and more. <a href="/university">View Classes</a></p>
+                </div>
+            </div>
+            <div class="griditem arrow" onclick="window.location.href='https://www.uniquephoto.com/university';">
+                &#8594
+            </div>
+        </div>
+    </div>
+</div>
