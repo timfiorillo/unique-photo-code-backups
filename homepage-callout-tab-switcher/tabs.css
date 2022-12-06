@@ -1,0 +1,66 @@
+
+
+/* Class Selector */
+
+.selectorbox {
+  text-align:center;
+}
+
+.selectorbox > section {
+  display: none;
+  padding: 20px 0 0;
+}
+
+.selectorbox > input {
+  display: none;
+}
+
+.selectorbox > label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 7px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  height: unset;
+}
+
+.selectorbox > label:hover {
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+.selectorbox > input:checked + #tab1label {
+  color: #fff;
+  background: #0071B6;
+  text-decoration: none;
+}
+
+.selectorbox > input:checked + #tab2label {
+  color: #fff;
+  background: #02A259;
+  text-decoration: none;
+}
+
+.selectorbox > #tab1:checked ~ #content1,
+.selectorbox > #tab2:checked ~ #content2 {
+  display: block;
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .selectorbox > label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .selectorbox > label {
+    padding: 15px;
+  }
+}
+
+/* End Class Selector */
